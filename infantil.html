@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Store</title>
+    <link rel="stylesheet" href="Cateinfantil.css">
+    <link rel="stylesheet" href="catinfante.js">
+</head>
+<body>
+    <!-- Encabezado y Menú -->
+    <a href="https://wa.me/1234567890" class="whatsapp_float" target="_blank">
+        <img src="..//Mi tienda Online/Imagenes/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <header class="header"> <!--CONTENEDOR PADRE 1-->
+        <div class="logo"> <!--DIV 1-->
+            <video class="video" src="../Mi tienda Online/Imagenes/Logo.mp4" type="video/mp4" width="15%" height="15%" loop muted autoplay></video><br>
+        </div>
+        <div class="logo1"><!--DIV 2-->
+            <h1 class="nombre">VENUS STORE</h1>
+            <h3>Sección Infantil</h3>
+        </div>
+        <nav class="nav"><!--DIV 3-->
+            <ul class="menu">
+                <li><a href="../Mi tienda Online/Project1.html">Inicio <img class="icon" src="Imagenes/inicio.png"></a></li>
+                <li><a href="#">Productos <img src="Imagenes/caret-abajo.png" width="10px" height="10px"></a>
+                    <ul class="submenu">
+                        <li><a href="..//Mi tienda Online/Hombres.html">Hombre</a></li>
+                        <li><a href="..//Mi tienda Online/Mujeres.html">Mujer</a></li>
+                        <li><a href="..//Mi tienda Online/infantil.html">Infantil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Carrito<img class="icon" src="Imagenes/carrito.png"></a></li>
+            </ul>
+        </nav>
+    </header><!--AQUÍ ACABA EL CONTENEDOR PADRE 1-->
+
+    <!-- Sección de Filtros -->
+    <section class="filtros-hombre">
+        <h3>Filtrar por:</h3>
+        <div class="filtros">
+            <select id="categoria-filtro">
+                <option value="todos">Categoría</option>
+                <option value="camisa">Camisas</option>
+                <option value="pantalon">Pantalones</option>
+                <option value="chaqueta">Chaquetas</option>
+            </select>
+            
+            <select id="talla-filtro">
+                <option value="todos">Talla</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+            
+            <select id="color-filtro">
+                <option value="todos">Color</option>
+                <option value="negro">Negro</option>
+                <option value="blanco">Blanco</option>
+                <option value="azul">Azul</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos-hombre">
+        <div class="producto" data-categoria="camisa" data-talla="m" data-color="blanco">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/nena.webp" alt="Camisa Blanca" class="imagen-producto">
+            </div>
+            <h3>Camisa Blanca</h3>
+            <p>$35.00</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="producto" data-categoria="pantalon" data-talla="l" data-color="negro">
+            <div class="zoom">
+                <img src="pantalon.jpg" alt="Pantalón Negro" class="imagen-producto">
+            </div>
+            <h3>Pantalón Negro</h3>
+            <p>$50.00</p>
+            <button>Agregar al carrito</button>
+        </div>
+
+        <div class="producto" data-categoria="chaqueta" data-talla="xl" data-color="azul">
+            <div class="zoom">
+                <img src="chaqueta.jpg" alt="Chaqueta Azul" class="imagen-producto">
+            </div>
+            <h3>Chaqueta Azul</h3>
+            <p>$70.00</p>
+            <button>Agregar al carrito</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Venus Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

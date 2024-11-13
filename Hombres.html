@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Store</title>
+    <link rel="stylesheet" href="CateHombres.css">
+</head>
+<body>
+    <!-- Encabezado y Menú -->
+    <a href="https://wa.me/1234567890" class="whatsapp_float" target="_blank">
+        <img src="..//Mi tienda Online/Imagenes/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <header class="header"> <!--CONTENEDOR PADRE 1-->
+        <div class="logo"> <!--DIV 1-->
+            <video class="video" src="../Mi tienda Online/Imagenes/Logo.mp4" type="video/mp4" width="15%" height="15%" loop muted autoplay></video><br>
+        </div>
+        <div class="logo1"><!--DIV 2-->
+            <h1 class="nombre">VENUS STORE</h1>
+            <h3>Sección Masculina</h3>
+        </div>
+        <nav class="nav"><!--DIV 3-->
+            <ul class="menu">
+                <li><a href="../Mi tienda Online/Project1.html">Inicio <img class="iconos" src="Imagenes/inicio.png"></a></li>
+                <li><a href="#">Productos <img src="Imagenes/caret-abajo.png" width="10px" height="10px"></a>
+                    <ul class="submenu">
+                        <li><a href="..//Mi tienda Online/Hombres.html">Hombre</a></li>
+                        <li><a href="..//Mi tienda Online/Mujeres.html">Mujer</a></li>
+                        <li><a href="..//Mi tienda Online/infantil.html">Infantil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Carrito<img class="iconos" src="Imagenes/carrito.png"></a></li>
+            </ul>
+        </nav>
+    </header><!--AQUÍ ACABA EL CONTENEDOR PADRE 1-->
+
+    <!-- Sección de Filtros -->
+    <section class="filtros-hombre">
+        <h3>Filtrar por:</h3>
+        <div class="filtros">
+            <select id="categoria-filtro">
+                <option value="todos">Categorías</option>
+                <option value="sacos">Sacos</option>
+                <option value="blazer">Blazers</option>
+            </select>
+            
+            <select id="talla-filtro">
+                <option value="todos">Tallas</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+            <select id="color-filtro">
+                <option value="todos">Color</option>
+                <option value="beige">Beige</option>
+                <option value="gris">Gris</option>
+                <option value="cafe">Cafe</option>
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+            </select>
+            <button id="borrar-filtros" class="button type1">
+                <span class="btn-txt">Borrar Filtros</span>
+            </button>
+        </div>
+    </section>
+<!-- Aquí Acaba la parte de Filtros -->
+<!--**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- Aquí damos inicio a la sesión de Productos -->
+    <section class="productos-hombre">
+        <div class="producto" data-categoria="sacos" data-talla="m" data-color="beige">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/saco3.webp" alt="" class="zum">
+            </div>
+            <h3>Abrigo Beige</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-categoria="sacos" data-talla="l" data-color="gris">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/saco4.webp" alt="" class="zum">
+            </div>
+            <h3>Saco Gris</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+        <!--Producto #3-->
+        <div class="producto" data-categoria="sacos" data-talla="xl" data-color="cafe">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/saco5.jpeg" alt="" class="zum">
+            </div>
+            <h3>Saco Cafe</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+        <!--Producto #3-->
+        <div class="producto" data-categoria="sacos" data-talla="s" data-color="negro">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/cab1.webp" alt="" class="zum">
+            </div>
+            <h3>Saco Negro</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-categoria="sacos" data-talla="l" data-color="purpura">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/saco6.jpg" alt="" class="zum">
+            </div>
+            <h3>Saco Púrpura</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+        <div class="producto" data-categoria="sacos" data-talla="l" data-color="rojo">
+            <div class="zoom">
+                <img src="..//Mi tienda Online/Imagenes/cab2.webp" alt="" class="zum">
+            </div>
+            <h3>Saco Rojo</h3>
+            <p>$60.000</p>
+            <button class="add">Agregar al carrito</button>
+        </div>
+    </section>
+<!--Aquí acaba la sección de Productos -->
+<!--**-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-->
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="contacto">
+          <p>Síguenos en:</p>
+          <div class="redes">
+              <!--Aquí inicia Facebook Boton-->
+              <div class="tooltip-containerf">
+                  <div class="tooltipf">
+                    <div class="profilef">
+                      <div class="userf">
+                          <a href="https://www.facebook.com/profile.php?id=61566389901912"><div class="imgf"><img src="..//Mi tienda Online/Imagenes/facebook.png" alt=""></div></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566389901912"><div class="detailsf">
+                          <div class="usernamef">Venus Store</div>
+                        </div>
+                      </div></a>
+                    </div>
+                  </div>
+                  <div class="textf">
+                    <a class="iconf" href="https://www.facebook.com/profile.php?id=61566389901912">
+                      <div class="layerf">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="facebookSVG">
+                          <svg
+                            viewBox="0 0 40 40"
+                            xml:space="preserve"
+                            xmlns="https://www.facebook.com/profile.php?id=61566389901912"
+                          >
+                            <linearGradient
+                              gradientUnits="userSpaceOnUse"
+                              gradientTransform="matrix(40 0 0 -39.7778 11115.001 16212.334)"
+                              y2="407.5726"
+                              y1="406.6018"
+                              x2="-277.375"
+                              x1="-277.375"
+                              id="a"
+                            >
+                              <stop stop-color="#0062e0" offset="0"></stop>
+                              <stop stop-color="#19afff" offset="1"></stop>
+                            </linearGradient>
+                            <path
+                              d="M16.7 39.8C7.2 38.1 0 29.9 0 20 0 9 9 0 20 0s20 9 20 20c0 9.9-7.2 18.1-16.7 19.8l-1.1-.9h-4.4l-1.1.9z"
+                              fill="url(#a)"
+                            ></path>
+                            <path
+                              d="m27.8 25.6.9-5.6h-5.3v-3.9c0-1.6.6-2.8 3-2.8H29V8.2c-1.4-.2-3-.4-4.4-.4-4.6 0-7.8 2.8-7.8 7.8V20h-5v5.6h5v14.1c1.1.2 2.2.3 3.3.3 1.1 0 2.2-.1 3.3-.3V25.6h4.4z"
+                              fill="#fff"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              <!--AQUÍ ACABA FACEBOOK-->
+
+              <!--INSTRAGRAM BOTON-->
+      <div class="tooltip-container">
+                  <div class="tooltip">
+                    <div class="profile">
+                      <div class="user">
+                        <div class="img"><img src="..//Mi tienda Online/Imagenes/logoimg.JPG" alt=""></div>
+                        <div class="details">
+                          <div class="username">@VenusStore</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a class="icon" href="#">
+                      <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="instagramSVG">
+                          <svg
+                            fill="white"   class="svgIcon"   viewBox="0 0 448 512"   height="1.5em"
+                            xmlns="https://www.instagram.com/venusstore/"
+                          >
+                            <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <!--AQUÍ ACABA INSTRAGRAM-->
+      <div class="frase">
+          <p>Se un Elite, viste con Venus y eleva tu presencia</p><br>
+          <p>&copy; 2024 Venus Store. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+    <!-- Script para el filtro-->
+    <script src="..//Mi tienda Online/catman.js"></script>
+</body>
+</html>

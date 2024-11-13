@@ -1,0 +1,59 @@
+<div class="banner">
+  <div class="text">
+    <h3>MODA MASCULINA</h3>
+    <h1>CHAQUETAS</h1>
+    <a href="#" class="cta">COMPRAR AHORA →</a>
+  </div>
+  <div class="image">
+    <img src="ruta-de-la-imagen.jpg" alt="Chaqueta">
+  </div>
+</div>
+
+
+CCS:
+
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #ff5a2b; /* Color de fondo similar */
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+}
+
+.text h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.image img {
+  height: auto;
+  max-width: 200px;
+}
